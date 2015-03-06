@@ -1,0 +1,9 @@
+<h1>Create New Dog</h1>
+<%= @error %>
+<br>
+  <%= form_for @dog do |d| %> 
+    Name: <%= d.text_field :name %> 
+    Age: <%= d.text_field :age %>
+    <%= d.submit %> 
+  <% end %>
+<%= link_to "index", dogs_path %> 
